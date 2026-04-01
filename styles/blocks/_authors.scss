@@ -1,0 +1,33 @@
+.autoras-item {
+  display: flex;
+  gap: clamp(20px, #{calc(80/1920*100)}vw, 80px);
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  @media screen and (max-width: 768px){
+    flex-direction: column-reverse;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+    @media screen and (max-width: 768px){
+      flex-direction: column-reverse;
+    }
+  }
+
+}
+
+.autoras-item .author {
+  max-width: clamp(300px, #{calc(400/1920*100)}vw, 400px);
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.autoras-item .author h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 21px;
+}

@@ -1,0 +1,87 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: 768px){
+        gap: 15px;
+    }
+
+    ul {
+        position: relative;
+        padding: 10px 0 10px 185px;
+        margin-top: 20px;
+        border-top: 0.5px solid var(--color-blue);
+        border-bottom: 0.5px solid var(--color-blue);
+        list-style-type: disc;
+        display: none;
+        li {
+            display: list-item;
+            &::before{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px){
+            padding-left: 24px;
+            padding-top: 34px;
+        }
+    }
+
+}
+
+.content-item__title {
+    position: relative;
+    min-height: 70px;
+    height: auto;
+    padding: 10px 0;
+    border-top: 0.5px solid var(--color-blue);
+    border-bottom: 0.5px solid var(--color-blue);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-image: url(../img/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right 26px center;
+    @media screen and (max-width: 768px){
+        min-height: 55px;
+        background-size: 22px;
+        background-position: right 16px center;
+    }
+    @media screen and (max-width: 586px){
+        font-size: 16px;
+    }
+}
+
+.content-item__title h3 {
+    font-family: var(--font-base);
+    color: var(--color-text);
+    padding-left: 160px;
+    font-size: inherit;
+    padding-right: 75px;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px){
+        padding-left: 0px;
+        padding-right: 52px;
+    }
+}
+
+.content-item__title h3 span {
+    text-transform: capitalize;
+}
+
+.close-content-list {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 26px;
+    top: 26px;
+    transform: rotate(180deg);
+    width: 30px;
+    @media screen and (max-width: 768px){
+        width: 22px;
+        right: 16px;
+        top: 16px;
+    }
+}

@@ -1,0 +1,151 @@
+.l-header {
+    position: sticky;
+    background-color: var(--color-white);
+    z-index: 10;
+    transition: top 0.25s;
+    box-shadow: var(--box-shadow);
+
+}
+.l-header__wrap {
+    max-width: 1300px;
+    width: 100%;
+    height: 85px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+
+    @media screen and (max-width: 1280px){
+         padding: 0 16px;
+    }
+
+    @media screen and (max-width: 991px){
+        height: 60px;
+    }
+}
+.l-header__logo img {
+    height: 55px;
+    width: auto;
+
+    @media screen and (max-width: 991px){
+        height: 40px;
+    }
+}
+.l-header__menu--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.l-header__menu--link {
+    display: flex;
+    align-items: center;
+    transition: bacground-color 0.25s ease-in-out;
+    padding: 6px 14px;
+    color: var(--color-dark-blue);
+    position: relative;
+    font-size: 18px;
+
+    @media screen and (max-width: 1280px){
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .l-header__menu--btn {
+        display: none;
+    }
+    .l-header__menu--link::before {
+      content: '';
+      height: 1px;
+      width: 0;
+      background-color: var(--color-dark-blue);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      transition: width 0.35s ease;
+    }
+    .l-header__menu--link.active::before,
+    .l-header__menu--link:hover::before {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .l-header__wrap {
+    padding: 8px 16px;
+  }
+  .l-header__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 15px 36px;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: var(--color-white);
+  }
+  .l-header__menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .l-header__menu--list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .l-header__menu--item {
+    width: 100%;
+    transition: transform 0.35s ease-in-out;
+    transform: translateX(100%);
+    transition-delay: calc(0.03s * var(--i));
+  }
+  .l-header__menu.active .l-header__menu--item {
+    transform: translateX(0);
+    transition-delay: calc(0.03s * var(--i));
+  }
+  .l-header__menu--link {
+    height: auto;
+    display: block;
+    background-color: var(--white);
+    padding: 14px 16px;
+    box-shadow: 0px 6px 6px 0px #ebeff7;
+  }
+  .l-header__menu--link.active {
+    background-color: var(--color-blue);
+    color: var(--white);
+  }
+  .l-header__menu--btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  .menu__btn--open,
+  .menu__btn--close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s ease;
+  }
+  .menu__btn--close {
+    opacity: 0;
+  }
+  .l-header__menu--btn.active .menu__btn--open {
+    opacity: 0;
+  }
+  .l-header__menu--btn.active .menu__btn--close {
+    opacity: 1;
+  }
+}

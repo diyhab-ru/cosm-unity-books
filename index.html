@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body style="background-color: #FAFBFF;">
+
+    <header class="l-header">
+        <div class="l-header__wrap">
+
+            <a href="/" class="l-header__logo">
+                <img src="img/logo-horizontal.svg" width="243" height="55" alt="CosmUnity logo" />
+            </a>
+
+            <nav class="l-header__menu">
+                <ul class="l-header__menu--list">
+                    <li class="l-header__menu--item" style="--i: 0">
+                        <a href="#about" class="l-header__menu--link">Sobre el libro</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 1">
+                        <a href="#video" class="l-header__menu--link">Vídeo</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 2">
+                        <a href="#content" class="l-header__menu--link">Contenido</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 3">
+                        <a href="#trechos" class="l-header__menu--link">Fragmento</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 4">
+                        <a href="#autoras" class="l-header__menu--link">Sobre los autores</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 5">
+                        <a href="#comprar" class="l-header__menu--link">Comprar</a>
+                    </li>
+                    <li class="l-header__menu--item" style="--i: 6">
+                        <a href="#comments" class="l-header__menu--link">Opiniones</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.l-header__menu -->
+
+            <button class="l-header__menu--btn menu__btn">
+                <img src="img/icons/menu.svg" class="menu__btn--open" alt="Abrir el menú" />
+                <img src="img/icons/menu-close.svg" class="menu__btn--close" alt="Cerrar menú" />
+            </button>
+
+        </div>
+    </header>
+
+    <div class="l-banner">
+        <div class="l-banner__wrapper" style="background-image: url('img/banner-bg.png');">
+            <div class="container l-banner__content">
+                <div class="l-banner__content--left">
+                    <h1>Matrice <br />je základem <br />duše</h1>
+                    <div class="l-banner__description">
+                        <p>Larissa Seklítova, Lyudmila Strélnikova</p>
+                    </div>
+                    <div class="l-banner__buttons">
+                        <a href="https://www.amazon.es/alma-mistérios-estructura-Allá-Desconocido/dp/8412856384"
+                            class="btn btn-sm" target="_blank">
+                            comprar ahora
+                            <img src="img/icons/cart.svg" alt="" />
+                        </a>
+                        <a href="#" class="btn btn-o btn-sm">leer un fragmento</a>
+                    </div>
+                </div>
+                <div class="l-banner__content--right">
+                    <img src="img/banner-book.png" alt="ALT">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="l-section target-section about" id="about">
+            <div class="container">
+                <h2>¿DE QUÉ TRATA ESTE LIBRO?</h2>
+
+                <div class="about__content">
+                    <p>El conocimiento sobre la existencia del alma no es algo nuevo. La gente sabe de ella desde
+                        tiempos inmemoriales pero, en la actualidad, en un periodo de cambio de civilización, ha surgido
+                        la necesidad de recordar a la humanidad su existencia para que el ser humano se concentre en la
+                        necesidad de perfeccionarla.</p>
+                    <p>Su conocimiento se transmite ahora de forma más amplia que en el pasado teniendo en cuenta que el
+                        hombre moderno es capaz de comprender las verdades que se le revelan. El lector descubrirá las
+                        bases de la estructura constructiva del alma, los procesos relacionados con su funcionamiento y
+                        los misterios de su creación. El libro habla de los mundos paralelos de la Tierra y de los seres
+                        que los habitan, del karma, del cerebro humano y del halo que rodea la cabeza, así como del
+                        significado de los sueños. También se podrá descubrir.</p>
+
+                    <ul>
+                        <li>por qué el alma pasa por el ciclo de reencarnación</li>
+                        <li>cuáles son los objetivos de su desarrollo</li>
+                        <li>la estructura energética del ser humano,su lugar en el sistema general de la Creación
+                            Universaly mucho más.</li>
+                    </ul>
+
+                </div>
+
+                <div class="about__button text-center">
+                    <a href="https://www.amazon.es/alma-mistérios-estructura-Allá-Desconocido/dp/8412856384"
+                        class="btn btn-sm" target="_blank">
+                        comprar ahora
+                        <img src="img/icons/cart.svg" alt="" />
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="video__divide">
+        <section class="l-section target-section video" id="video">
+            <div class="container">
+                <!-- Видео с YouTube - заполняем атрибут data-video-id и вставляем в него ID видео
+                    Например, для этого видео https://www.youtube.com/embed/98CfZtiO69A?si=ETBt43NXNl0TG-uX
+                    data-video-id"=98CfZtiO69A"
+                -->
+                <div class="video-player" data-preview="img/cover.jpg" data-video-id="aXY_QpUsh38">
+                    <div id="player">
+                        <div class="play-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section target-section content" id="content" style="background-color: #ffffff;">
+            <div class="container">
+                <h2>CONTENIDO DEL LIBRO</h2>
+
+                <div class="content-wrapper">
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3>CAPÍTULO 1. ALMA, LA MATRIZ. LA ESTRUCTURA DEL ALMA</h3>
+                        </div>
+                        <ul>
+                            <li>Alma</li>
+                            <li>Creación del alma</li>
+                            <li>Estructura del alma</li>
+                            <li>La matriz</li>
+                            <li>La trinidad del alma</li>
+                            <li>Enfermedad de la matriz. Degradación</li>
+                            <li>Tiempo y matriz</li>
+                            <li>Matrices de diferentes formas</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3><span>CAPÍTULO 2.</span> EL DESARROLLO</h3>
+                        </div>
+                        <ul>
+                            <li>Diferentes vías del perfeccionamiento</li>
+                            <li>El programa</li>
+                            <li>Reencarnación. muerte. decodificación</li>
+                            <li>El número de almas</li>
+                            <li>El valor de las almas</li>
+                            <li>Por qué se valoran las almas</li>
+                            <li>La compra de almas</li>
+                            <li>Libertad para las almas</li>
+                            <li>Experimentos de los científicos de la Tierra con el alma</li>
+                            <li>Tipos de almas</li>
+                            <li>Almas de planetas, estrellas</li>
+                            <li>Mundos diferentes</li>
+                            <li>Conclusiones sobre el alma</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3>
+                                <span>CAPÍTULO 3.</span> EL CEREBRO DESCONOCIDO DEL SER HUMANO. EL CEREBRO CENTRAL O
+                                ANILLO DE IMPULSO. EL CEREBRO DEL GÉNERO. EL CEREBRO DE LA SANGRE.
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>La sangre del ser humano</li>
+                            <li>El cerebro del género</li>
+                            <li>El cerebro central o anillo de impulso</li>
+                            <li>Composición y funcionamiento del anillo de impulso</li>
+                            <li>El cerebro central en la hora de la muerte</li>
+                            <li>El cerebro humano desconocido</li>
+                            <li>Introducción</li>
+                            <li>Algo sobre el cerebro físico</li>
+                            <li>El proceso de pensar</li>
+                            <li>Formas de pensamiento</li>
+                            <li>Tipos de pensamiento</li>
+                            <li>Tipos de pensamiento de otras formas de vida</li>
+                            <li>Niveles de desarrollo</li>
+                            <li>La memoria</li>
+                            <li>La consciencia, el subconsciente</li>
+                            <li>Iluminación. Conciencia cósmica</li>
+                            <li>La conciencia colectiva</li>
+                            <li>La dirección de la sociedad (los egregores)</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3>
+                                <span>CAPÍTULO 4.</span> PROGRAMA DE VIDA
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>El desarrollo según el programa</li>
+                            <li>Qué representa en si el programa</li>
+                            <li>Las deudas de energía</li>
+                            <li>Los tipos de programas humanos</li>
+                            <li>La composición de los programas</li>
+                            <li>Los programas para los sueños</li>
+                            <li>El programa para la muerte</li>
+                            <li>Los programas de Dios y del Diablo</li>
+                            <li>Los programas de los Determinadores de la Tierra y otros programas</li>
+                            <li>Los programas de la Tierra</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3>
+                                <span>CAPÍTULO 5.</span> KARMA O LA LEY DE RELACIÓN DE CAUSA Y EFECTO
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>La Ley de Relación de Causa y Efecto</li>
+                            <li>El pecado</li>
+                            <li>El karma concreto*</li>
+                            <li>El karma por homicidio</li>
+                            <li>Asesinato de animales</li>
+                            <li>El karma familiar, colectivo, nacional</li>
+                            <li>Arrepentimiento</li>
+                            <li>El karma en el futuro</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3><span>CAPÍTULO 6.</span> SUEÑO Y ENSUEÑOS</h3>
+                        </div>
+                        <ul>
+                            <li>Sueño y ensueños</li>
+                            <li>Para qué se le ha dado el sueño al ser humano</li>
+                            <li>La educación en el sueño</li>
+                            <li>La información recibida en los ensueños</li>
+                            <li>La formación de los sueños</li>
+                            <li>La salida de alma del cuerpo durante el sueño</li>
+                            <li>Gente que no sueña</li>
+                            <li>Sueños proféticos</li>
+                            <li>Sueños del pasado. Sueños de colores</li>
+                            <li>Sueño letárgico</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3><span>CAPÍTULO 7.</span> EL MISTERIO DE MUERTE DEL SER HUMANO</h3>
+                        </div>
+                        <ul>
+                            <li>La muerte del ser humano</li>
+                            <li>¿Qué es la muerte?</li>
+                            <li>Causas de muerte</li>
+                            <li>El proceso de la muerte</li>
+                            <li>El Distribuidor (Separador)</li>
+                            <li>El juicio</li>
+                            <li>El purgatorio</li>
+                            <li>La descodificación</li>
+                            <li>La distribución de almas después de la muerte</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3>
+                                <span>CAPÍTULO 8.</span> LOS MUNDOS PARALELOS DE LA TIERRA. PLASMOIDES
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>Los mundos paralelos de la Tierra</li>
+                            <li>Anti-Mente</li>
+                            <li>Mundos más densos que la Tierra</li>
+                            <li>Extraterrestres</li>
+                            <li>Plasmoides</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item__title">
+                            <h3><span>CAPÍTULO 9.</span> EL CAMPO DE INFORMACIÓN DE LA TIERRA</h3>
+                        </div>
+                        <ul>
+                            <li>El campo de información de la Tierra</li>
+                            <li>Introducción</li>
+                            <li>La transmisión de información hacia abajo</li>
+                            <li>Números</li>
+                            <li>La información de las categorías "A" y "B"</li>
+                            <button class="close-content-list">
+                                <img src="img/icons/arrow-down.svg" alt="Cerrar" />
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section target-section trechos" id="trechos">
+            <h2>FRAGMENTOS DEL LIBRO</h2>
+            <div class="container">
+                <div class="trechos-wrapper" style="background-image: url('img/trechos-book.png')">
+                    <div class="trechos-content">
+                        <div class="left">
+                            <p>
+                                —&nbsp;&nbsp;&nbsp; Es una estructura muy compleja. No se compone de figuras, sino de
+                                volúmenes que pasan de uno a otro entrelazándose entre sí. Y, por supuesto, están
+                                compuestos de cifras. Cifra sobre cifra. Si para vosotros es más fácil imaginar un
+                                globo, entonces el volumen del alma puede imaginarse como tal, pero también puede ser
+                                un cubo, aunque, por supuesto, todo es más complejo. Pero, tomemos el volumen en forma
+                                de globo y representémoslo en el plano. Se trata de una malla celular volumétrica
+                                compuesta por cifras (véase el esquema 1) que suponen un determinado potencial
+                                energético. Cada una de sus células se rellena con una energía de determinada
+                                cualidad. La cifra es como un código que expresa la cualidad y cantidad necesarias para
+                                cada célula. Además, cada código cifrado tiene un significado para Nosotros.
+                            </p>
+                            <img src="img/trechos-image.png" class="trechos-book-image" alt="La matriz del alma">
+                            <p>
+                                —&nbsp;¿Pero la forma de las almas es la misma para los seres humanos? <br>
+                                — La forma de la matriz de cada ser humano depende de su desarrollo, por ello todos la
+                                tienen diferente. <br>
+                                —&nbsp;¿Y en la etapa inicial? ¿Son iguales? <br>
+                                —&nbsp;Las almas del ser humano recién hechas son todas iguales, o más exactamente,
+                                están todas vacías. Las células de sus matrices no están rellenas. Las almas que
+                                originariamente salen del laboratorio representan en sí unos volúmenes con igual
+                                cantidad de energía vital. Y por supuesto,
+                            </p>
+                            <div class="divide"></div>
+                        </div>
+                        <div class="right">
+                            <p>
+                                todas son estándar. Por lo que, solamente el proceso de desarrollo las vuelve
+                                diferentes. <br>
+                                —&nbsp;¿Por qué almas iguales se convierten en diferentes? <br>
+                                —&nbsp;Claro, es una pregunta interesante: cómo resulta que de un número infinito de
+                                almas idénticas surge una profusión colosal de almas diferentes, ya que entre los seres
+                                humanos no hay almas idénticas, aunque tal variante pudiera ser posible.&nbsp; La causa
+                                radica en que durante el proceso de creación en su estructura se deposita una partícula
+                                especial que le da al alma una cierta trayectoria especial de desarrollo, inherente sólo
+                                a ella misma. Se trata de una partícula minúscula, que funciona solamente para la
+                                individualización de todas las almas, es decir, que proporciona la peculiaridad al alma
+                                a través de la elegida por la misma dirección de desarrollo. Por ello, exactamente
+                                debido a esta partícula todas las almas se convierten en irrepetibles e individuales.
+                                Adquiriendo la habilidad de cambiar y perfeccionarse en una dirección deseada. <br>
+                                —&nbsp;¿Es esta partícula la portadora del programa? <br>
+                                —&nbsp;Se puede decir así, pero no es el propio programa en sí. Es como un hito de
+                                ubicación del alma en el Volumen general* de la Esencia*. Cada alma está predestinada
+                                para su propio y menor Volumen, por ello, esta partícula orienta con exactitud a qué
+                                Volumen, y en consecuencia, en qué dirección debe desarrollarse un alma, y en qué
+                                Volumen otra, y así sucesivamente. Por lo que se puede decir, que esta partícula no
+                                solo le aporta al alma su individualidad, sino que también determina su ubicación en
+                                el Volumen general de la Esencia*. (…)”<br>
+                                (Capitulo 1. Alma, la matriz, la estructura del alma. <br>
+                                ESTRUCTURA DEL ALMA. <br>
+                                La matriz.)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="trechos-quote">
+                    <p>
+                        Para saber más sobre este libro, le invitamos a recibir gratuitamente una parte del mismo:
+                    </p>
+                    <div class="text-center">
+                        <a href="#callback" class="btn">leer un fragmento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-section target-section autoras" id="autoras" style="background-color: #EBEFF7;">
+            <div class="container">
+                <small>Breve información</small>
+                <h2 class="text-left">SOBRE LAS AUTORAS</h2>
+
+                <div class="autoras-item">
+                    <div class="autoras-item__content">
+                        <p>L. Seklitova y L. Strelnikova son autoras de más de 70 libros dedicados a la filosofía cósmica. Todas sus obras son el resultado de 36 años de contacto, iniciado en 1989, con la Mente Superior.</p>
+                        <p>Los libros revelan la información más reciente y detallada sobre la estructura energética del ser humano y su lugar en el Universo, sobre la Tierra y sus perspectivas de desarrollo, sobre la estructura del Universo y sobre el intercambio de energía en el Cosmos.</p>
+                        <p style="color: #FF0A0A;">En la actualidad (2025) se están traduciendo a 22 idiomas.</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/author-1.png" alt="Larisa Seklitova">
+                        <h3>Larisa Seklitova</h3>
+                    </div>
+                </div>
+                <div class="autoras-item">
+                    <div class="autoras-item__content">
+                        <p>Ejemplares de algunas de las obras se encuentran en las bibliotecas centrales de ciudades de todo el mundo, como la Biblioteca de Alejandría (Egipto), la Biblioteca Mario de Andrade (Brasil), la Biblioteca de Nueva Delhi (India), la Biblioteca Nacional de Pekín (China) y otras.</p>
+                        <p>La obra clave de las autoras es el libro «Las Leyes de la Creación Universal o los fundamentos de la existencia de la Jerarquía Divina», que contiene más de 130 leyes cósmicas. Es el más complejo y de mayor calado filosófico en la actividad literaria de L. Seklitova y L. Strelnikova.</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/author-2.png" alt="Liudmila Strelnikova">
+                        <h3>Liudmila Strelnikova</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="l-section target-section comments" id="comments">
+
+          <div class="container">
+            <small>¿Qué tiene de interesante este libro?</small>
+            <h2 class="text-left">RESEÑAS DE LOS LECTORES</h2>
+
+            <div class="comments-slider-wrapper">
+                <div class="comments-slider swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-1037be52e352378ea" aria-live="polite">
+                    <div class="comment-slide swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 480px;">
+                        <strong>Svetlana, 66 años, ingeniera</strong>
+                        <p>Este es el primer libro que realmente ha cambiado mi visión sobre la humanidad. Cada página contiene una sorpresa. He aprendido muchas cosas interesantes y nuevas sobre el alma. Por primera vez he leído que todos vivimos según programas individuales. El mundo a mi alrededor cambió de repente y empecé a percibirlo de una manera completamente diferente. Descubrí tantas cosas interesantes y nuevas. Me interesó mucho estudiar lo que me sucedía: por qué ocurría algo desagradable o por qué sucedía de repente algo alegre. Analizando nuestros pensamientos y acciones, podemos evitar muchos errores y problemas en la vida.</p>
+                    </div>
+                    <div class="comment-slide swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 480px;">
+                        <strong>Aydar, 50 años, ingeniero</strong>
+                        <p>Fue inesperado para mí descubrir la estructura profunda del alma y su funcionalidad. Realmente, es información nueva para todos. Antes no podía imaginar cómo todo en el mundo ocurre de manera tan sutil y cómo todos estamos interconectados con la Mente Superior. Creo que si todos conocieran este libro y su información, el mundo cambiaría para mejor.</p>
+                    </div>
+                    <div class="comment-slide swiper-slide" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 480px;">
+                        <strong>MrCok</strong>
+                        <p>Uno de los mejores libros esotéricos que he leído. Responde a muchas preguntas y la información está bien estructurada. Es un libro que, tras leerlo, puede cambiar tu visión del mundo. Lo recomiendo sin duda, incluso si nunca has leído nada de esoterismo. El libro es una batería de energía. En este libro hay «cientos de baterías».</p>
+                        </div>
+                    <div class="comment-slide swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 480px;">
+                        <strong>Margarita K., 47 años, ingeniera</strong>
+                        <p>El libro «El alma y los misterios de su estructura» ha cambiado por completo mi visión del mundo. Puedo decir que después de leerlo comenzó una nueva etapa de mi vida consciente. Aprendí cómo está organizada el alma humana y cuál es su valor. Respondió a preguntas para las que no encontraba respuesta en ningún otro sitio. Lo leí con mucho entusiasmo. Estoy segura de que se convertirá en un éxito mundial. Después de estudiar los nuevos conocimientos transmitidos a la humanidad a través de Larisa Seklitova y Liudmila Strelnikova, mi vida cobró sentido y comprendí por qué estamos aquí, en este planeta.</p>
+                    </div>
+                    <div class="comment-slide swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 480px;">
+                        <strong>Anna M. (el texto de la revisión se da en la abreviatura)</strong>
+                        <p>¡UN LIBRO EXCEPCIONAL! Llevaba mucho tiempo buscando un libro sobre el alma y, por fin, ¡lo he encontrado! En él se describen las razones de la creación del alma, su estructura, el proceso de encarnación en el cuerpo, etc. ¡Incluso he descubierto que no solo los seres humanos tienen alma, sino también aquellos en quienes ni siquiera pensarías! ¡ES UNA OBRA MAESTRA! Gracias a este libro he comprendido el sentido de la vida humana. He aprendido mucho sobre los sueños, los sonámbulos, el espacio y el tiempo. Y lo que más me ha impresionado es el misterio de la muerte humana. Lo he releído más de una vez. ¡LO RECOMIENDO A TODOS!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination comments-slider-pagination"></div>
+            <div class="comments-btn comments-slider-prev"></div>
+            <div class="comments-btn comments-slider-next"></div>
+            </div>
+            <a href="https://www.amazon.es/alma-mistérios-estructura-Allá-Desconocido/dp/8412856384" class="comment-decor" target="_blank">
+              <img src="img/icons/book-black.svg" alt="">
+              <span>comprar ahora</span>
+            </a>
+          </div>
+
+        </section>
+
+        <section class="l-section target-section comprar" id="comprar" style="background-color: #ffffff;">
+          <div class="container">
+            <h2>
+              <img src="img/icons/book-blue.svg" alt="">
+              <span>¿CÓMO HACER EL PEDIDO DEL LIBRO?</span>
+            </h2>
+
+            <div class="comprar-wrapper">
+                <div class="compar-items">
+
+                    <div class="compar-item">
+                        <div class="compar-item__content">
+                        <div class="compar-item__step">1</div>
+                        <h3 class="mb-0">SELECCIONAR <br>EN EL SITIO <br>WEB</h3>
+                        <p>
+                            Dirígete al sitio web del editor y navega hasta la página del libro haciendo clic en el botón «Comprar». En la página del libro que se abre, haz clic en el botón «Comprar» y sigue las instrucciones.
+                        </p>
+                        </div>
+                        <a href="https://www.amazon.es/alma-mistérios-estructura-Allá-Desconocido/dp/8412856384" class="btn" target="_blank">
+                        comprar ahora
+                        <img src="img/icons/cart.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="compar-item">
+                        <div class="compar-item__content">
+                        <div class="compar-item__step">2</div>
+                        <h3>PAGAR EL <br>PEDIDO</h3>
+                        <p>
+                            Después de rellenar tus datos personales, haz clic en el botón «Realizar pedido». Pasa a la última página para pagar seleccionando el método que prefieras.
+                        </p>
+                        </div>
+                        <img src="img/icons/wallet.svg" alt="">
+                    </div>
+
+                    <div class="compar-item">
+                        <div class="compar-item__content">
+                        <div class="compar-item__step">3</div>
+                        <h3>ESPERAR LA <br>ENTREGA</h3>
+                        <p>
+                            Ya está todo listo. <br>El plazo de entrega del libro es de 15 días porque se imprime bajo demanda.
+                        </p>
+                        </div>
+                        <img src="img/icons/car.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="l-section liberty" id="liberty" style="background-color: #ffffff;">
+          <div class="container">
+              <img src="img/callback-book.jpg" class="liberty-book-desktop" alt="">
+              <img src="img/callback-book-mobile.jpg" class="liberty-book-mobile" alt="">
+          </div>
+        </div>
+
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <div class="l-footer-row">
+          
+            <div class="l-footer-col">
+                <a href="/" class="l-footer-logo">
+                    <img src="img/logo-vertical.svg" alt="ALT">
+                </a>
+            </div>
+
+            <div class="l-footer-col">
+                <a href="/" class="l-footer-link">Privacy Policy</a>
+                <a href="/" class="l-footer-link">User Agreement</a>
+            </div>
+
+            <div class="l-footer-col"></div>
+
+            <div class="l-footer-col contacts">
+                <div class="l-footer-col__content">
+                    <h3>Contact Us </h3>
+                    <a href="mailto:info@cosm-unity.com" class="l-footer-link">info@cosm-unity.com</a>
+                </div>
+                <div class="l-footer-soc1al">
+                    <a href="" class="l-footer-soc1al__link" target="_blank">
+                        <svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5762 0.877441H13.7494C11.6158 0.877441 9.56954 1.72499 8.06101 3.23367C6.55228 4.74234 5.70473 6.78853 5.70473 8.9221V13.7489H0.87793V20.1846H5.70473V33.0561H12.1405V20.1846H16.9672L18.5762 13.7489H12.1405V8.9221C12.1405 8.49538 12.31 8.08615 12.6117 7.78441C12.9134 7.48269 13.3227 7.31317 13.7494 7.31317H18.5762V0.877441Z" stroke="#061846" stroke-width="1.75521" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="" class="l-footer-soc1al__link" target="_blank">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.9682 24.1175C20.9174 24.1175 24.119 20.9159 24.119 16.9667C24.119 13.0174 20.9174 9.81592 16.9682 9.81592C13.0189 9.81592 9.81738 13.0174 9.81738 16.9667C9.81738 20.9159 13.0189 24.1175 16.9682 24.1175Z" stroke="#061846" stroke-width="1.75521" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.87793 24.1176V9.81595C0.87793 4.87936 4.87984 0.877441 9.81644 0.877441H24.1181C29.0546 0.877441 33.0566 4.87936 33.0566 9.81595V24.1176C33.0566 29.0541 29.0546 33.0561 24.1181 33.0561H9.81644C4.87984 33.0561 0.87793 29.0541 0.87793 24.1176Z" stroke="#061846" stroke-width="1.75521"/><path d="M26.7998 7.15431L26.8196 7.13232" stroke="#061846" stroke-width="4.02233" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/video.js"></script>
+    <script src="scripts/spoler.js"></script>
+    <script src="scripts/comments-slider.js"></script>
+</body>
+
+</html>

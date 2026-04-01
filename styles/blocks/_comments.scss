@@ -1,0 +1,124 @@
+.comments {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comments-slider-wrapper {
+    position: relative;
+    max-width: 1076px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.comments-slider {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 5px 30px 0px rgba(200, 217, 250, 1);
+    color: var(--color-black);
+}
+
+.comment-slide {
+    padding: 45px;
+    @media screen and (max-width: 768px){
+        padding: 20px;
+    }
+}
+
+.comments-slider strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px){
+       margin-bottom: 15px;
+    }
+}
+
+.comments-slider p {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.comments-slider-wrapper::before,
+.comments-slider-wrapper::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/icons/quote.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+.comments-slider-wrapper::before {
+    left: 33px;
+    top: -20px;
+}
+
+.comments-slider-wrapper::after {
+    right: 33px;
+    bottom: -20px;
+    transform: rotate(180deg);
+}
+
+.comments-slider-pagination {
+    top: 103% !important;
+}
+
+.comments-slider-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: #e5e5e5;
+}
+
+.comments-slider-pagination .swiper-pagination-bullet-active {
+    background-color: #b2bbc0;
+}
+
+.comments-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.25s;
+    @media screen and (max-width: 1280px){
+        display: none;
+    }
+}
+
+.comments-slider-prev {
+    left: -40px;
+    background-image: url('../img/icons/arrow-left.svg');
+}
+
+.comments-slider-next {
+    right: -40px;
+    background-image: url('../img/icons/arrow-right.svg');
+}
+
+.comment-decor {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    color: var(--color-black);
+    text-transform: capitalize;
+}
+
+.comment-decor img {
+    width: 35px;
+    height: auto;
+}
+
+@media screen and (max-width: 1010px) {
+    .comment-book-cover {
+        margin-left: 60%;
+    }
+}

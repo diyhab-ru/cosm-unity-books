@@ -1,0 +1,116 @@
+.trechos {
+    position: relative;
+    padding-bottom: 0;
+    z-index: 2;
+
+    @media screen and (max-width: 768px){
+       padding-bottom: clamp(35px, #{calc(75/1920*100)}vw, 75px);
+    }
+
+    + section {
+        padding-top: clamp(35px, #{calc(160/1920*100)}vw, 160px);
+        margin-top: -6.77vw;
+        @media screen and (max-width: 768px){
+            margin-top: 0;
+            padding-top: clamp(35px, #{calc(75/1920*100)}vw, 75px);
+        }
+    }
+}
+
+.trechos-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto 88px;
+    font-size: 12px;
+    line-height: 19px;
+    padding-bottom: 40px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+    @media screen and (max-width: 992px){
+        background-image: none !important;
+        margin: 0;
+        box-shadow: none;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
+}
+
+.trechos-book-image {
+    max-width: 300px;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.trechos-content {
+    display: flex;
+    width: 82%;
+    margin-inline: auto;
+    @media screen and (max-width: 992px){
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
+}
+
+.trechos-content>div {
+    width: 50%;
+    padding: 25px 0 0;
+    @media screen and (max-width: 992px){
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.trechos-content .left {
+    padding-right: 30px;
+    @media screen and (max-width: 768px){
+        padding-right: 0;
+    }
+}
+
+.trechos-content .left .divide {
+    display: none;
+}
+
+.trechos-content .right {
+    padding-left: 30px;
+    @media screen and (max-width: 768px){
+        padding-left: 0;
+    }
+}
+
+.trechos-content p {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.trechos-quote {
+    background-color: var(--color-white);
+    box-shadow: 0px 5px 20px 0px rgba(200, 217, 250, 1);
+    border-radius: 30px;
+    padding: 44px 80px;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    margin-inline: auto;
+    @media screen and (max-width: 768px){
+        padding: 16px;
+        border-radius: 20px;
+    }
+}
+
+.trechos-quote p {
+    margin-bottom: 30px;
+}
+
+.divide {
+    height: 5px;
+    background-image: url('../img/icons/divider.png');
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 0;
+}
