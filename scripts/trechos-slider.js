@@ -1,4 +1,4 @@
-const trechosSlider = new Swiper('.trechos-wrapper', {
+const trechosSlider = new Swiper('.trechos-slider', {
     loop: false,
     navigation: {
         nextEl: '.trechos-slider-next',
