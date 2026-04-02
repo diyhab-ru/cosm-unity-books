@@ -15,6 +15,10 @@
             padding-top: clamp(35px, #{calc(75/1920*100)}vw, 75px);
         }
     }
+
+    .container{
+        max-width: calc(1296px + var(--container-padding-x) * 2);
+    }
 }
 
 .trechos-wrapper {
@@ -22,8 +26,8 @@
     background-repeat: no-repeat;
     background-position: center top;
     margin: 0 auto 88px;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 25px;
     padding-bottom: 40px;
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
     @media screen and (max-width: 992px){
@@ -37,20 +41,22 @@
 }
 
 .trechos-book-image {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     margin: 25px auto;
 }
 
 .trechos-content {
+    --padding-content-x: 27px;
     display: flex;
-    width: 82%;
+    width: 83%;
     margin-inline: auto;
     @media screen and (max-width: 992px){
         width: 100%;
     }
 
     @media screen and (max-width: 768px){
+        --padding-content-x: 0;
         flex-direction: column;
     }
 }
@@ -65,18 +71,14 @@
 }
 
 .trechos-content .left {
-    padding-right: 30px;
+    padding-right: var(--padding-content-x);
     @media screen and (max-width: 768px){
         padding-right: 0;
     }
 }
 
-.trechos-content .left .divide {
-    display: none;
-}
-
 .trechos-content .right {
-    padding-left: 30px;
+    padding-left: var(--padding-content-x);
     @media screen and (max-width: 768px){
         padding-left: 0;
     }
@@ -112,5 +114,5 @@
     background-size: 22px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 10px 0;
+    margin: 34px 0 20px;
 }
