@@ -18,6 +18,7 @@
 
     .container{
         max-width: calc(1296px + var(--container-padding-x) * 2);
+        position: relative;
     }
 }
 
@@ -26,43 +27,44 @@
     background-repeat: no-repeat;
     background-position: center top;
     margin: 0 auto 88px;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: clamp(14px, #{calc(18/1920*100)}vw, 18px);
+    line-height: 1.5;
     padding-bottom: 40px;
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
     @media screen and (max-width: 992px){
         background-image: none !important;
-        margin: 0;
+        background-color: #f6f8f7;
+        margin-bottom: 70px;
         box-shadow: none;
-    }
-    @media screen and (max-width: 768px){
         font-size: 16px;
     }
-}
-
-.trechos-book-image {
-    max-width: 400px;
-    width: 100%;
-    margin: 25px auto;
+    @media screen and (max-width: 768px){
+        font-size: 14px;
+    }
 }
 
 .trechos-content {
-    --padding-content-x: 27px;
-    display: flex;
-    width: 83%;
-    margin-inline: auto;
+    --padding-content-x: 105px;
+
+    @media screen and (max-width: 1280px){
+        --padding-content-x: 6.64vw;
+    }
     @media screen and (max-width: 992px){
-        width: 100%;
+        --padding-content-x: 0;
+        max-height: 400px;
+        overflow-y: auto;
     }
 
-    @media screen and (max-width: 768px){
-        --padding-content-x: 0;
-        flex-direction: column;
+    img {
+        max-width: 400px;
+        width: 100%;
+        margin: 25px auto;
     }
+
 }
 
 .trechos-content>div {
-    width: 50%;
+    // width: 50%;
     padding: 25px 0 0;
     @media screen and (max-width: 992px){
         width: 100%;
@@ -71,16 +73,18 @@
 }
 
 .trechos-content .left {
-    padding-right: var(--padding-content-x);
-    @media screen and (max-width: 768px){
-        padding-right: 0;
+    padding-left: var(--padding-content-x);
+    @media screen and (max-width: 992px){
+        padding: 20px;
+        padding-bottom: 0;
     }
 }
 
 .trechos-content .right {
-    padding-left: var(--padding-content-x);
-    @media screen and (max-width: 768px){
-        padding-left: 0;
+    padding-right: var(--padding-content-x);
+    @media screen and (max-width: 992px){
+        padding: 20px;
+        padding-bottom: 0;
     }
 }
 
